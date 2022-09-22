@@ -107,7 +107,7 @@
     </header>
 
     <!-- SLIDER -->
-    <section class="mainpage-sections__slider slider">
+    <section class="mainpage-sections__slider">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <article class="swiper-slide">
@@ -157,18 +157,46 @@
     </section>
 
     <section class="mainpage-sections__purpose">
-        <div class="purpose-data">
+        <div class="purpose-data container">
             <h1 class="purpose-title">
                 Продукция Preparat по назначению
             </h1>
         </div>
-        <div class="container grid">
-            <div class="catalog-section__wrap">
-                <a href="#">
-                    <img src="" alt="">
+            <div class="catalog-section__wrap grid container">
+                <a href="#" class="catalog-item">
+                    <img src="assets/img/purpose-1.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
                 </a>
+                <a href="#" class="catalog-item">
+                    <img src="assets/img/purpose-2.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
+                </a>
+                <a href="#" class="catalog-item">
+                    <img src="assets/img/purpose-3.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
+                </a>
+                <a href="#" class="catalog-item">
+                    <img src="assets/img/purpose-4.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
+                </a>
+                <span id="dots"></span>
+                
+                <span id="more">
+                    <a href="#" class="catalog-item">
+                        <img src="assets/img/purpose-5.jpg" alt="">
+                        <p class="img-description">Какой-то текст</p>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <img src="assets/img/purpose-6.jpg" alt="">
+                        <p class="img-description">Какой-то текст</p>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <img src="assets/img/purpose-7.jpg" alt="">
+                        <p class="img-description">Какой-то текст</p>
+                    </a>
+                </span>
             </div>
-        </div>
+            <button id="myBtn" onclick="readMore()">Показать ещё</button>
     </section>
 
 </body>
