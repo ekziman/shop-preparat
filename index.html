@@ -13,7 +13,7 @@
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -30,58 +30,72 @@
         </div>
 
         <div class="main-header">
-            <a href="/" class="header-logo"><i class="ri-add-box-line"></i></a>
+            <a href="/" class="header-logo">
+                <img src="assets/img/icons/header-logo.svg" alt="">
+            </a>
 
             <div class="header-slogan">№1 в России</div>
 
             <div class="header-actions">
                 <nav class="nav"></nav>
-                    <a href="#" class="action-item action-cabinet">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="action-item action-favorite">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0H24V24H0z"/><path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228zm6.826 1.641c-1.5-1.502-3.92-1.563-5.49-.153l-1.335 1.198-1.336-1.197c-1.575-1.412-3.99-1.35-5.494.154-1.49 1.49-1.565 3.875-.192 5.451L12 18.654l7.02-7.03c1.374-1.577 1.299-3.959-.193-5.454z"/>
-                        </svg>
-                        <span class="favorite-action__quantity quantity-item">0</span>
-                    </a>
-                    <a href="#" class="action-item action-cart">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM9 6v2a3 3 0 0 0 6 0V6h2v2A5 5 0 0 1 7 8V6h2z"/>
-                        </svg>
-                        <span class="cart-action__quantity quantity-item">0</span>
-                    </a>
+                <a href="#" class="action-item action-cabinet">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" />
+                    </svg>
+                </a>
+                <a href="#" class="action-item action-favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0H24V24H0z" />
+                        <path
+                            d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228zm6.826 1.641c-1.5-1.502-3.92-1.563-5.49-.153l-1.335 1.198-1.336-1.197c-1.575-1.412-3.99-1.35-5.494.154-1.49 1.49-1.565 3.875-.192 5.451L12 18.654l7.02-7.03c1.374-1.577 1.299-3.959-.193-5.454z" />
+                    </svg>
+                    <span class="favorite-action__quantity quantity-item">0</span>
+                </a>
+                <a href="#" class="action-item action-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM9 6v2a3 3 0 0 0 6 0V6h2v2A5 5 0 0 1 7 8V6h2z" />
+                    </svg>
+                    <span class="cart-action__quantity quantity-item">0</span>
+                </a>
 
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link active-link">Продукция</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Где купить</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Акции</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Блог</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">О нас</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Новости</a>
-                            </li>
-                        </ul>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link active-link">Продукция</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Где купить</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Акции</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                    </ul>
 
-                        <div class="nav__close" id="nav-close">
-                            <i class="ri-close-line"></i>
-                        </div>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
                     </div>
+                </div>
 
-                    <!-- Toggle button -->
-                    <div class="nav__toggle action-item" id="nav-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
-                    </div>
+                <!-- Toggle button -->
+                <div class="nav__toggle action-item" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+                    </svg>
+                </div>
                 </nav>
             </div>
         </div>
@@ -106,7 +120,7 @@
 
     </header>
 
-    <!-- SLIDER -->
+    <!-- Slider -->
     <section class="mainpage-sections__slider">
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -156,64 +170,69 @@
         <div class="swiper-pagination"></div>
     </section>
 
-    <section class="mainpage-sections__purpose">
+    <!-- Purpose -->
+    <section class="mainpage-sections__purpose boxing">
         <div class="purpose-data container">
             <h1 class="purpose-title">
                 Продукция Preparat по назначению
             </h1>
         </div>
-            <div class="catalog-section__wrap grid container">
-                <a href="#" class="catalog-item">
+        <div class="catalog-section__wrap grid box-container">
+                <a href="#" class="catalog-item box">
                     <img src="assets/img/purpose-1.jpg" alt="">
                     <p class="img-description">Какой-то текст</p>
                 </a>
-                <a href="#" class="catalog-item">
+                <a href="#" class="catalog-item box">
                     <img src="assets/img/purpose-2.jpg" alt="">
                     <p class="img-description">Какой-то текст</p>
                 </a>
-                <a href="#" class="catalog-item">
+                <a href="#" class="catalog-item box">
                     <img src="assets/img/purpose-3.jpg" alt="">
                     <p class="img-description">Какой-то текст</p>
                 </a>
-                <a href="#" class="catalog-item">
+                <a href="#" class="catalog-item box">
                     <img src="assets/img/purpose-4.jpg" alt="">
                     <p class="img-description">Какой-то текст</p>
                 </a>
-                <span id="dots"></span>
-                
-                <span id="more">
-                    <a href="#" class="catalog-item">
-                        <img src="assets/img/purpose-5.jpg" alt="">
-                        <p class="img-description">Какой-то текст</p>
-                    </a>
-                    <a href="#" class="catalog-item">
-                        <img src="assets/img/purpose-6.jpg" alt="">
-                        <p class="img-description">Какой-то текст</p>
-                    </a>
-                    <a href="#" class="catalog-item">
-                        <img src="assets/img/purpose-7.jpg" alt="">
-                        <p class="img-description">Какой-то текст</p>
-                    </a>
-                </span>
-            </div>
-            <button type="button" class="btn load-more" id="myBtn" onclick="readMore()">Показать ещё</button>
-            <!-- <button id="myBtn" onclick="readMore()">Показать ещё</button> -->
+                <a href="#" class="catalog-item box">
+                    <img src="assets/img/purpose-5.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
+                </a>
+                <a href="#" class="catalog-item box">
+                    <img src="assets/img/purpose-6.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
+                </a>
+                <a href="#" class="catalog-item box">
+                    <img src="assets/img/purpose-7.jpg" alt="">
+                    <p class="img-description">Какой-то текст</p>
+                </a>
+        </div>
+        <button type="button" class="btn load-more" id="load-more" >Показать ещё</button>
     </section>
 
+    <!-- Products -->
+    <section class="mainpage-sections__products">
+        
+    </section>
 </body>
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-    </a>
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+</a>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+<!--=============== SCROLL REVEAL ===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== MIXITUP JS ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
+<!--=============== MIXITUP JS ===============-->
+<script src="assets/js/mixitup.min.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+<script>
+   
+</script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
 </html>

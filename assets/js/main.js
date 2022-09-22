@@ -38,25 +38,19 @@ var swiperPopular = new Swiper(".swiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    
-  });
-
+});
 
 /*=============== SHOW/HIDE ===============*/
-function readMore() {
-    var dots = document.getElementById("dots");
-    var more = document.getElementById("more");
-    var btn = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btn.innerHTML = "Показать ещё";
-      more.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btn.innerHTML = "Скрыть";
-      more.style.display = "grid";
-      more.style.gridTemplateColumns = "repeat(2, 150px)";
-      more.style.gap = "1.5rem";
-    }
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 4;
+
+loadMoreBtn.onclick = () =>{
+  let boxes = [...document.querySelectorAll('.boxing .box-container .box')];
+  for (var i = currentItem; i < currentItem + 4; i++){
+      boxes[i].style.display = 'inline-block';
   }
+  currentItem += 4;
+    if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+    }
+}
