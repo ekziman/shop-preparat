@@ -56,6 +56,7 @@ function readMore() {
       dots.style.display = "none";
       btn.innerHTML = "Скрыть";
       more.style.display = "grid";
-      more.style.gridTemplateColumns = "repeat(2, 170px)";
+      more.style.gridTemplateColumns = "repeat(2, 150px)";
+      more.style.gap = "1.5rem";
     }
   }
