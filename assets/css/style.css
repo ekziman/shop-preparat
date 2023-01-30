@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
 }
-  
+
 html {
     scroll-behavior: smooth;
 }
@@ -168,7 +168,7 @@ body{
 /* Show menu */
 .show-menu {
     right: 0;
-    z-index: 999999999;
+    z-index: 99999999999999;
 }
 
 
@@ -191,7 +191,7 @@ body{
     border-radius: 5px;
     text-decoration: none;
     padding: 0 5px;
-    
+
 }
 .more-btn i{
     font-size: 25px;
@@ -262,6 +262,7 @@ body{
     width: 100%;
     height: 210px;
     transition: .3s;
+    z-index: -1;
 }
 .mainpage-sections__slider img {
     position: relative;
@@ -342,4 +343,138 @@ body{
     background-color: rgb(126, 126, 126);
     color: #fff;
     border: 1px solid rgb(126, 126, 126);
+}
+
+/* tabs_products */
+.tabs {
+    font-size: 0;
+    margin-top: 50px;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+.tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+}
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 2px 8px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    padding-bottom: 20px;
+}
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    color: #00963e;
+}
+
+.tabs>input[type="radio"]:checked+label::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #00963e;
+}
+
+/* product */
+.content {
+    margin-bottom: 100px;
+}
+
+.product-card {
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 250px;
+    height: 460px;
+    background: #f7f9fb;
+    padding: 25px 17px;
+}
+.product-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.product-card .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+.product-card .description {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.product-card .price-wrap {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.product-card .price {
+    text-align: center;
+    width: 92px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.product-card .price .currency{
+    font-size: 20px;
+}
+.product-card .btn_buy {
+    margin-top: 23px;
+    font-size: 12px;
+    font-weight: 300;
+    height: 30px;
+    width: 115px;
+    background: #00a651;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    text-align: left;
+    padding-left: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.product-card .btn_buy:hover {
+    background: #03b158;
+}
+.product-card .btn_buy::after {
+    background-color: #03b158;
+    height: 30px;
+    width: 30px;
+    background-image: url(/assets/img/icons/buy.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 0 4px 4px 0;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
 }

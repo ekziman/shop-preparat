@@ -33,7 +33,13 @@ var swiperPopular = new Swiper(".swiper", {
     autoplay: {
         delay: 7000,
     },
-
+    parallax: true,
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    speed: 1500,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
